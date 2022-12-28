@@ -25,6 +25,7 @@ export default function Textform(props) {
      )
      setBtnText("Light mode")
      document.body.style.backgroundColor = 'black';
+     document.title="Notepad-Dark"
 }else{
   setMyStyle(
     {
@@ -34,6 +35,7 @@ export default function Textform(props) {
    )
    setBtnText("Dark mode")
    document.body.style.backgroundColor = 'white';
+   document.title="Notepad-Light"
 }
    }
 
@@ -54,6 +56,8 @@ export default function Textform(props) {
     setText(space.join(" "))
   };
   const [text, setText] = useState(" "); 
+
+  
 
   return (
     <>
